@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import static java.lang.Math.sqrt;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner input1 = new Scanner(System.in);
+    Scanner input2 = new Scanner(System.in);
+    Scanner input3 = new Scanner(System.in);
+
+    System.out.println("please insert the numbers" + "\n" + "X is the first value and Y is the second Value");
+    double x = input1.nextDouble();
+    double y = input1.nextDouble();
+
+    System.out.println("Enter 1 for power of numbers" + "\n" + "Enter 2 for Logarithm" + "\n" + "Enter 3 for maximmum"
+        + "\n" + "Enter 4 for square root");
+    int num3 = input3.nextInt();
+    switch (num3) {
+      case 1:
+
+        System.out.println("power of x and y is " + Math.pow(x, y));
+
+        break;
+      case 2:
+
+        System.out.println("Logarithm of x is " + Math.log(x));
+        System.out.println("Logarithm of y is " + Math.log(y));
+        break;
+        
+      case 3:
+        System.out.println("Maximum number of x and y is: " + Math.max(x, y));
+        break;
+
+      case 4:
+        System.out.println("Square root of y is: " + Math.sqrt(y));
+        System.out.println("Square root of x is: " + Math.sqrt(x));
+        break;
+
+      default:
+        System.out.println("Please try again later");
+    }
+  }
+
+}
