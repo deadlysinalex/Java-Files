@@ -24,7 +24,8 @@ public class Determining_max_in_an_Array {
         Max=  arr[i];
       }
       
-      System.out.println("maximum value " + Max);
+
   }
+          System.out.println("The maximum value is " + Max);
   }
 }
