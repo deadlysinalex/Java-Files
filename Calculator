@@ -1,0 +1,121 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ */
+package com.mycompany.java_swing;
+import java.util.Scanner;
+/**
+ *
+ * @author Alexander
+ */
+class math {
+    math(){
+    Scanner input1 = new Scanner(System.in);
+    Scanner input2 = new Scanner(System.in);
+    Scanner input3 = new Scanner(System.in);
+    
+    double pi =  3.14; 
+    System.out.println("If you are doing area of a circle please put the second number as zero." + "\n" + "For the Mark Precentage please instert total mark of test as number 2 and the mark you got as number 1." + "\n" + "for the square number is will only do one number."+ "\n" + "Insert 2 numbers.");
+    double num1 =  input1.nextDouble();
+    double num2 =  input2.nextDouble();
+    
+    System.out.println("Enter the choices");
+    System.out.println("Enter 1 for addition" + "\n" + "Enter 2 for subtraction" + "\n" + "Enter 3 for multiplication" + "\n" + "Enter 4 for division" + "\n" + "Enter 5 for Absolute value" + "\n" + "Enter 6 for perimeter of a square" + "\n" + "Enter 7 for Area of a square" + "\n" + "Enter 8 for area of a triangle" 
+            + "\n" + "Enter 9 for area of circle" + "\n" + "enter 10 for a mark precentage" + "\n" + "Enter 11 for the square of any number" + "\n" + "Enter 12 for the great of two numbers");
+    int num3 = input3.nextInt();
+    
+    
+    //int a = 1;
+    switch (num3) {
+      case 1:
+        
+        System.out.println("Addition is "+ (num1+num2));
+        break;
+
+      case 2:
+       
+        System.out.println("Subraction is "+ (num1-num2));
+        break;
+
+      case 3:
+        
+        System.out.println("Multiplication is "+ (num1*num2));
+        break;
+
+      case 4:
+        
+        System.out.println("Division is "+ (num1 / num2));
+        break;
+      
+      case 5:
+          System.out.println("The absoulte number is " + (num1%num2));
+          break;
+      case 6:
+          System.out.println("the perimeter is "+((num1*2)+(num2*2)));
+          break;
+      case 7:
+          System.out.println("The area is "+(num1*num2));
+          break;
+      case 8:
+          System.out.println("the area of the Triangle is " + ((num1*num2)/2));
+          break;
+      case 9:
+          System.out.println("The area of the circle is " + ((num1*num1)*pi));
+          break;
+      case 10:
+          System.out.println("your mark is " + ((num1 / num2)*100) + "%");
+          break;
+      case 11:
+          System.out.println("The square of your number first number is " + (num1 * num1));
+          System.out.println("The square of your number second number is " + (num2 * num2));
+          break;
+       
+      case 12:
+          if(num1>num2) {
+              
+      System.out.println(num1 + " is greater");
+      } else {
+       System.out.println(num2 + " is greater");
+              }
+      
+      break;
+      
+      default:
+        System.out.println("ERROR"+"\n"+"Some other choice." + "\n" + "Please Try Again Later");
+        break;
+        
+      }
+    }
+}
+
+public class Calculater {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        // TODO code application logic here
+   System.out.println("this is my math Calculator.  please use it wisely");
+  
+   new math();
+   while (true){
+       Scanner input4 = new Scanner(System.in);
+    System.out.println("Enter 1 if you want to continue using the calculator" + "\n" + "Enter 2 to quit");
+   
+  int num4 = input4.nextInt();
+  switch(num4) {
+      case 1:
+          System.out.println("Okay lets go again");
+          new math();
+       break;
+       
+      case 2:
+          System.out.println("Goodbye.  Thank you for using Math calculator");
+          break;
+      default:
+          System.out.println("SYSTEM ERROR PLEASE TRY AGAIN LATER");
+          break;
+        }
+   }
+    }
+}
