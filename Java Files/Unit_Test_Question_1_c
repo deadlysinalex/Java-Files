@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author Alexander
+ */
+import java.util.Scanner;
+public class Test_Question_1_c {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //Determining if a number is even or odd
+        Scanner input=new Scanner(System.in);
+        System.out.println("Please insert a number. It cannot be a decimal number.");
+        int num1= input.nextInt();
+        if(num1%2==0){
+            System.out.println(num1 + " is an even number");
+        }else {
+            System.out.println(num1 + " is an odd number");
+        }
+        
+    }
+    
+}
