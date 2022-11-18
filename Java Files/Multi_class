@@ -1,0 +1,59 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mycompany.java_swing;
+
+/**
+ *
+ * @author Alexander
+ */
+class Rainbow{
+    String color="red";
+    String color1="orange";
+    String color2="yellow";
+    String color3="green";
+    String color4="blue";
+    String color5="purple";
+    String color6="pink";
+    public void display(){
+        System.out.println("red");
+        System.out.println("orange");
+        System.out.println("yellow");
+        System.out.println("green");
+        System.out.println("blue");
+        System.out.println("purple");
+        System.out.println("pink");
+    }
+}
+class Deadlysins{
+    String sins="7 Deadly Sins";
+    String Amount="7";
+    public void display(){
+        System.out.println("\n" + "\n" + "Here are the 7 Deadly sins" + "Deadly Sin of Wrath, Dragon sin Meliodas" +"\n" + "Deadly Sin of Pride, Lion sin Escanor"+"\n" + "Deadly Sin of Lust, Goat sin Gowther"+"\n" + "Deadly Sin of Sloth, Grizzly sin Harlequin(aka King)" +"\n" + "Deadly Sin of Gluttony, Boar sin Merlin" +"\n" + "Deadly Sin of Envy, Serpent sin Diana"+"\n" + "Deadly Sin of Greed, Fox sin Ban");
+    }
+}
+class Commandments{
+    String Amount="10";
+    String Commandments="10 Commandments";
+    
+    public void display(){
+        System.out.println("\n" + "\n" + "Here are the 10 commandments" + "\n" + "Zeldris the Commandment of Piety" + "\n" + "Melascula the Commandment of Faith " + "\n" + "Grayroad the Commandment of Pacifism" + "\n" + "Monspeet the Commandment of Reticence" + "\n" + "Gloxinia the Commandment of Repose." + "\n" + "Galand the Commandment of Truth" + "\n" + "Fraudrin the Commandment of Selflessness" + "\n" + "Estarossa the Commandment of Love" + "\n" + "Drole the Commandment of Patience" + "\n" + "Derieri the Commandment of Purity");
+    }
+}
+public class Multi_Classes {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Rainbow Rainbow1 = new Rainbow();              // creating an object
+        Rainbow1.display();                     // calling the member function
+        Deadlysins Deadlysins1 = new Deadlysins();  // creating an object
+        Deadlysins1.display();                     // calling the member function
+        Commandments Commandments1 = new Commandments();
+        Commandments1.display();
+    }   
+    
+}
