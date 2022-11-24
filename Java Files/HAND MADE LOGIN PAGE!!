@@ -1,0 +1,102 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mycompany.loginforusers;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.*;
+
+
+/**
+ *
+ * @author Alexander
+ */
+
+
+
+public class Login_Page implements ActionListener {
+    
+    private static JLabel l;
+    private static JTextField userText;
+    private static JLabel s;
+    private static JPasswordField passwordText;
+    private static JButton b;
+    private static JLabel a;
+    private static JLabel w;
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        JPanel p = new JPanel();
+        JFrame f = new JFrame();
+        f.setSize(350,200);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        f.add(p);
+        
+        p.setLayout(null);
+        l = new JLabel("user");
+        l.setBounds(10, 20, 80, 25);
+        p.add(l);
+        
+        userText = new JTextField(20);
+        userText.setBounds(100,20,165,25);
+        p.add(userText);
+        
+        a = new JLabel("Password");
+        a.setBounds(10, 50, 80, 25);
+        p.add(a);
+        
+        passwordText = new JPasswordField(20);
+        passwordText.setBounds(100,50,165,25);
+        
+        p.add(passwordText);
+        
+        b = new JButton("Login");
+        b.setBounds(10, 80, 80, 35);
+        b.addActionListener(new Login_Page());
+        p.add(b);
+        
+        s = new JLabel("");
+        s.setBounds(10, 110, 300, 25);  
+        p.add(s);
+        
+        f.setVisible(true);
+        
+        
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String l = userText.getText();
+        String a = passwordText.getText();
+        System.out.println(l + " , " + a);
+        
+        if(l.equals("Alex")&&  a.equals("Phoenix sin of hatred")) {
+        s.setText("Login Successful!");
+        JPanel Panel2 = new JPanel();
+        JFrame Frame2 = new JFrame();
+        Frame2.setSize(350,400);
+        Frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        Frame2.add(Panel2);
+        Panel2.setLayout(null);
+        w = new JLabel("Welcome");
+        w.setBounds(10, 20, 80, 25);
+        Panel2.add(w);
+        JLabel user = new JLabel(l);
+        user.setBounds(10, 50, 80, 25);
+        Panel2.add(user);
+        Frame2.setVisible(true);
+        } else {
+            s.setText("Login Unsuccessful");
+            
+        }
+
+    }
+        
+    
+}
