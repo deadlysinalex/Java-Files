@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mycompany.test_review_2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Alexander
+ */
+public class Grade_Finder {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+         Scanner input1 = new Scanner(System.in);
+         Scanner input2 = new Scanner(System.in);
+         
+        System.out.println("Please enter the total amount of marks the test was out of");
+        double num1 = input1.nextDouble();
+        System.out.println("Please enter the total amount of marks you got");
+        double num2 = input2.nextDouble();
+        
+        double num3 = (num2/num1)*100;
+        System.out.println(num3 + "%");
+        
+        if (num3>=100) {
+            System.out.println("Amazing job");  
+        } else if(num3>=90){
+            System.out.println("Great job");
+        } else if(num3>=80){
+            System.out.println("Good job");
+        } else if(num3>=70) {
+            System.out.println("okay job but you can improve");
+        } else if(num3>=60){
+            System.out.println("Seriously you can do better then a 60%`");
+        } else if(num3>=50) {
+            System.out.println("Okay you've go to be kidding me!!  You are capable of getting better than this!");
+        } else if(num3<=49) {
+            System.out.println("my god did you even bother studying for this test?!?! TRY HARDER NEXT TIME");
+        }
+    }
+    
+}
