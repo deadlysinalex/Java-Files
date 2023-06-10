@@ -1,0 +1,15 @@
+class Main {
+ static void hello(){
+    System.out.println("Hello World");
+  }
+
+  public static void main(String[] args) {
+    int n = 10;
+      //for loop
+      for (hello(); n());{
+      System.out.println(hello());
+        
+      }
+    System.out.println("out of the loop");
+  }
+}
