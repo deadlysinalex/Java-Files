@@ -1,0 +1,41 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+
+
+
+   /* int i = 2;
+    //int n = 300;
+    System.out.println("These are the Even numbers");
+    while (i<=20){
+      System.out.println(i);
+     i= i + 2; //i++; 
+      }
+    
+    int n = 1;
+    //int n = 300;
+    System.out.println("These are the Odd numbers");
+    while (n<=20){
+      System.out.println(n);
+     n= n + 2; //i++; 
+      } 
+*/    
+    /*int i = 1;
+    do {
+       System.out.println(i);
+      i++;  
+    } while(i<22);*/
+
+    int i=5;
+    if(i%2 ==0){
+      System.out.println("This number is even");
+    }
+    else{
+      System.out.println("This number is Odd");
+    }
+
+  }
+}
+
+/*Need to be able to identify if a number is a prime or not using the for loop and if, and else*/
+
